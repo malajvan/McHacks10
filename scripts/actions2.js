@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#start').addEventListener('click', startTimer,{once:true});
-    
+    document.querySelector('#start1').addEventListener('click', startTimer,{once:true});
     document.querySelector('#skip').addEventListener('click', squish);
     document.querySelector('#reset').addEventListener('click', resetTimer);
 
@@ -38,8 +38,8 @@ function startTimer() {
         cleared = true;
         clearInterval(x);
         document.getElementById("nav1").style.display="none";
-        //document.getElementById("nav3").style.display="none";
-        document.getElementById("nav2").style.display="block";
+        document.getElementById("nav3").style.display="none";
+        //document.getElementById("nav2").style.display="block";
         
         //document.getElementById("demo").innerHTML = "STOPPED";
         
@@ -66,8 +66,9 @@ function startTimer() {
         if (distance < (-25*60*1000)) {
             cleared = true;
             clearInterval(x);
+            document.getElementById("nav3").style.display="none";
             document.getElementById("nav1").style.display="none";
-            document.getElementById("nav2").style.display="block";
+            //document.getElementById("nav2").style.display="block";
             //document.getElementById("demo").innerHTML = "EXPIRED";
         }
     
@@ -80,8 +81,8 @@ function resetTimer() {
     //document.getElementById("start").onclick=startTimer();
     document.querySelector('#start').addEventListener('click', startTimer,{once:true});
     document.getElementById("demo").innerHTML = "";
-    document.getElementById("nav2").style.display="none";
-    document.getElementById("nav1").style.display="block";
+    document.getElementById("nav3").style.display="none";
+    //document.getElementById("nav1").style.display="block";
 }
 
 

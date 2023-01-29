@@ -44,7 +44,31 @@ a {
     vertical-align: middle;
 }
 
+img {
+    display: block;
+}
 
+.summary {
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+th {
+    background-color: #464646;
+    color: #fff4f4;
+    
+}
+td {
+    background-color: #Fbe4e4;
+}
 
 .hammer {
     width: 200px;
@@ -87,7 +111,7 @@ a {
 
 .skip {
     justify-content: center;
-    margin-left: 15%;
+    margin-left: 13%;
     margin-top: 10px;
     background-color: #fff4f4;
     border: 2px solid #fff4f4;
@@ -97,6 +121,15 @@ a {
     font-weight: bolder;
     display: block;
     
+}
+
+.reset {
+    /* margin-left: 9%; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 .divide {

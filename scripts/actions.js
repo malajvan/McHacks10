@@ -21,18 +21,19 @@ function squish() {
     
 }
 cleared = false;
-function stopTimer() {
-    cleared = true;
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "STOPPED";
-}
-
 function startTimer() {
+    
     // Set the start time
     var startTime = new Date().getTime();
-
+    function stopTimer() {
+        cleared = true;
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "STOPPED";
+        
+    }
     // Update the count down every 1 second
     var x = setInterval(function() {
+        document.getElementById("stop").addEventListener("click", stopTimer);
         // Update current time
         var currTime = new Date().getTime();
             
@@ -47,13 +48,14 @@ function startTimer() {
             
         // Output the result in an element with id="demo"
         document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
-            
+
         // If the count down is over, write some text 
         if (distance < (-25*60*1000)) {
             cleared = true;
             clearInterval(x);
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
+    
     }, 1000);
 
 }

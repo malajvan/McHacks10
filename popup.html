@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cattimer</title>
+    <link href="style/popup.css" rel="stylesheet" />
+    <script src="scripts/actions.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <p style="margin-left: 1ch; font-size:x-large;" class="title">Cat Time Tracker</p>
+        <button style="margin-left: 3ch;"><a href="home.html" target="_blank" style="text-decoration: none"> Visit your cat </a> </button>
+    </div>
+
+    <div id='nav1' class="nav split left">
+
+        <div id="timer" class="timer centered">
+            <div id="time" class="time">
+                <p id="demo"></p>
+
+            </div>
+        </div>
+        
+        <button id="start" class="skip" onclick="startTimer();">Start timer</button>
+
+    </div>
+    <div class="divide">
+        <div id='block' class="split right">  
+            <div class="centered">
+                
+                <img class="cat" id="cat" src="resources/cat1.png" onclick="squish();"/>
+
+            
+        </div>
+
+    </div>
+</div>
+    
+</body>
+
+</html>

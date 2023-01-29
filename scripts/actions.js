@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-var occ = 0;
+
 //document.getElementById("cat").addEventListener("click", squish);
 function squish() {
 
@@ -35,14 +35,18 @@ function squish() {
     
 
 cleared = false;
+var occ = 0;
 function startTimer() {
-    
+    occ = occ + 1;
+    //if (occ === 1) {
     // Set the start time
     var startTime = new Date().getTime();
     function stopTimer() {
         cleared = true;
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "STOPPED";
+        document.getElementById("nav1").style.display="none";
+        document.getElementById("nav2").style.display="block";
+        //document.getElementById("demo").innerHTML = "STOPPED";
         
     }
     // Update the count down every 1 second
@@ -67,11 +71,20 @@ function startTimer() {
         if (distance < (-25*60*1000)) {
             cleared = true;
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById("nav1").style.display="none";
+            document.getElementById("nav2").style.display="block";
+            //document.getElementById("demo").innerHTML = "EXPIRED";
         }
     
     }, 1000);
+        
+    //}
+}
 
+function resetTimer() {
+    document.getElementById("start").onclick="startTimer();";
+    document.getElementById("nav2").style.display="none";
+    document.getElementById("nav1").style.display="block";
 }
 
 

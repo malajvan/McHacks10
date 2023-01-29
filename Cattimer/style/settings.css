@@ -1,0 +1,97 @@
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif !important;
+    color: #101e10;
+    background-color: #ffbdbd;
+    width: 350px;
+    margin: 20px auto;
+}
+
+.content {
+    border: 1px solid blue;
+    width: 1100px;
+    margin: 20px auto;
+   
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 650;
+}
+
+a {
+    display: block;
+}
+
+.cat {
+    width: 350px;
+    margin-left: 100px;
+    /*this fixes the bottom of the image, so scaling doesn't move the bottom */
+    transform-origin: bottom;
+}
+
+.cat.activate-animation {
+    animation: bonk 1s;
+}
+@keyframes bonk {
+    0% {
+        transform: scaleY(0.8);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+/* .split {
+    height: 100%;
+    width: 600px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+
+.left {
+    left: 0;
+    border: 1px solid black;
+}
+  
+.right {
+    right: 0;
+    border: 1px solid black;
+    
+} */
+  
+.divide {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+/* If you want the content centered horizontally and vertically */
+/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+  
+.popup {
+    width: 350px;
+    background: #ffbdbd;
+  }
+
+  
+button {
+    border: none;
+    background-color: #ffe6e6;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

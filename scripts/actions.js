@@ -2,18 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#start').addEventListener('click', startTimer);
     // document.querySelector('#stop').addEventListener('click', stopTimer);
     document.querySelector('#skip').addEventListener('click', squish);
+    document.querySelector('#reset').addEventListener('click', resetTimer);
 
   
-  });
+});
 
-
-
-
+var bonks = 0;
 //document.getElementById("cat").addEventListener("click", squish);
 function squish() {
 
-    occ += 1;
-    if (occ > 1) {
+    bonks += 1;
+    if (bonks > 1) {
         document.getElementById('warn').innerHTML="Still did not. Get back to studying, or lovely Mittens gets it again!";
     } 
     else {
@@ -21,8 +20,6 @@ function squish() {
     }
     document.getElementById('cat').classList.add('activate-animation');
     document.getElementById('hammer').classList.add('activate-anim');
-    //document.getElementById('warn').innerHTML="No, you did not. Get back to studying, or lovely Mittens gets it again!";
-
 
     setTimeout(()=> {
         document.getElementById('cat').classList.remove('activate-animation')
@@ -78,7 +75,8 @@ function startTimer() {
 }
 
 function resetTimer() {
-    document.getElementById("start").onclick="startTimer();";
+    //document.getElementById("start").onclick=startTimer();
+    document.getElementById("demo").innerHTML = "";
     document.getElementById("nav2").style.display="none";
     document.getElementById("nav1").style.display="block";
 }

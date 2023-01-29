@@ -30,6 +30,10 @@ a {
     padding-top: 30px;
 }
 
+.center {
+    text-align: center;
+}
+
 .timer {
     border: 10px solid white;
     background-color: #Fbe4e4;
@@ -111,12 +115,9 @@ td {
 }
 
 .cat.activate-animation {
-<<<<<<< Updated upstream
     -webkit-animation: bonk 1s;
     animation: bonk 1s;
-=======
-    animation: bonk 0.6s;
->>>>>>> Stashed changes
+
 }
 
 
@@ -144,7 +145,8 @@ button:active {
     background-color: #fff4f4d3;
     /* box-shadow: 0 5px #666; */
     transform: translateY(2px);
-  }
+}
+
 .skip {
     justify-content: center;
     margin-left: 13%;
@@ -179,6 +181,7 @@ button:active {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    
 }
   
 .divide {

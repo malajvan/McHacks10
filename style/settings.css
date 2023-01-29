@@ -71,6 +71,7 @@ td {
 }
 
 .hammer {
+    -webkit-transform-origin: center;
     width: 200px;
     margin-left: 70px;
     margin-bottom: -100px;
@@ -79,7 +80,17 @@ td {
 }
 
 .hammer.activate-anim {
+    -webkit-animation: bonkh 1s;
     animation: bonkh 1s;
+}
+
+@-webkit-keyframes bonkh { 
+    0% {
+        -webkit-transform: rotate(60deg);
+    }
+    100% {
+        -webkit-transform: none;
+    }
 }
 
 @keyframes bonkh {
@@ -90,7 +101,9 @@ td {
         transform: none;
     }
 }
+
 .cat {
+    -webkit-transform-origin: bottom;
     width: 350px;
     margin-left: 100px;
     /*this fixes the bottom of the image, so scaling doesn't move the bottom */
@@ -98,8 +111,20 @@ td {
 }
 
 .cat.activate-animation {
+    -webkit-animation: bonk 1s;
     animation: bonk 1s;
 }
+
+
+@-webkit-keyframes bonk {
+    0% {
+        -webkit-transform: scaleY(0.8);
+    }
+    100% {
+        -webkit-transform: none;
+    }
+}
+
 @keyframes bonk {
     0% {
         transform: scaleY(0.8);
@@ -119,7 +144,7 @@ td {
     height: 35px;
     border-radius: 5%;
     font-weight: bolder;
-    display: block;
+    visibility: block;
     
 }
 

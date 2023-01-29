@@ -1,0 +1,21 @@
+{
+    "name": "Cattimer",
+    "manifest_version": 2,
+    "description": "Timer on a cat",
+    "version": "0.1",
+  
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "page": "background.html"
+    },
+    "permissions": [
+      "activeTab",
+      "webNavigation",
+      "downloads",
+      "storage",
+      "tabs"
+    ],
+    "options_page": "options.html"
+  }

@@ -123,6 +123,15 @@ td {
     
 }
 
+.inline {
+    display: flex;
+    
+}
+
+.buttons {
+    vertical-align: middle;
+}
+
 .reset {
     /* margin-left: 9%; */
     justify-content: center;

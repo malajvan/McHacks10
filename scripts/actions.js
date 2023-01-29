@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#start').addEventListener('click', startTimer);
-    document.querySelector('#stop').addEventListener('click', stopTimer);
-    // document.querySelector('#skip').addEventListener('click', squish);
-    var link = document.getElementById('#skip');
-    link.addEventListener('click', function() {
-        squish();
+    // document.querySelector('#stop').addEventListener('click', stopTimer);
+    document.querySelector('#skip').addEventListener('click', squish);
 
-    });
   
   });
 

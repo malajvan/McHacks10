@@ -31,9 +31,9 @@ a {
 }
 
 .timer {
-    border: 10px solid black;
-    background-color: #990030;
-    color: #e5aa7a;
+    border: 10px solid white;
+    background-color: #Fbe4e4;
+    color: #990030;
     font-weight: bolder;
     border-radius: 9%;
     width: 300px;
@@ -111,8 +111,12 @@ td {
 }
 
 .cat.activate-animation {
+<<<<<<< Updated upstream
     -webkit-animation: bonk 1s;
     animation: bonk 1s;
+=======
+    animation: bonk 0.6s;
+>>>>>>> Stashed changes
 }
 
 
@@ -127,13 +131,20 @@ td {
 
 @keyframes bonk {
     0% {
-        transform: scaleY(0.8);
+        transform: scaleY(0.7);
     }
     100% {
         transform: none;
     }
 }
 
+button:hover {background-color: #fff4f4d3}
+
+button:active {
+    background-color: #fff4f4d3;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(2px);
+  }
 .skip {
     justify-content: center;
     margin-left: 13%;
@@ -150,11 +161,15 @@ td {
 
 .inline {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     
 }
 
 .buttons {
     vertical-align: middle;
+    margin: auto;
+    margin-left: 0px;
 }
 
 .reset {

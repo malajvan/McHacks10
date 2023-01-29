@@ -41,6 +41,7 @@ function startTimer() {
         cleared = true;
         clearInterval(x);
         document.getElementById("nav1").style.display="none";
+        document.getElementById("nav3").style.display="none";
         document.getElementById("nav2").style.display="block";
         //document.getElementById("demo").innerHTML = "STOPPED";
         
@@ -68,6 +69,7 @@ function startTimer() {
             cleared = true;
             clearInterval(x);
             document.getElementById("nav1").style.display="none";
+            document.getElementById("nav3").style.display="none";
             document.getElementById("nav2").style.display="block";
             //document.getElementById("demo").innerHTML = "EXPIRED";
         }
@@ -81,6 +83,7 @@ function resetTimer() {
     document.getElementById("start").onclick="startTimer();";
     document.getElementById("nav2").style.display="none";
     document.getElementById("nav1").style.display="block";
+
 }
 
 

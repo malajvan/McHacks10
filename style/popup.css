@@ -24,17 +24,25 @@ body {
 
 a {
     display: block;
+    text-decoration: none;
 }
-
+.n {
+    padding-top: 0px;
+    margin-left: 25px;
+    text-align: center;
+    justify-content: center;
+}
 .nav {
     padding-top: 30px;
     margin-left: 25px;
+    text-align: center;
+    justify-content: center;
 }
 
 .timer {
-    border: 4px solid black;
-    background-color: #990030;
-    color: #e5aa7a;
+    border: 4px solid white;
+    background-color: #Fbe4e4;
+    color: #990030;
     font-weight: bold;
     border-radius: 7%;
     width: 150px;
@@ -43,6 +51,7 @@ a {
     font-size: 18px;
     text-align: center;
     vertical-align: middle;
+    margin-left:70px;
 
 }
 
@@ -90,9 +99,9 @@ img {
 
 
 .cat {
-    width: 350px;
-    margin-top:50px;
-    margin-left: 190px;
+    width: 330px;
+    margin-top:0px;
+    margin-left: 70;
     /*this fixes the bottom of the image, so scaling doesn't move the bottom */
     transform-origin: bottom;
 }
@@ -128,7 +137,7 @@ img {
 .skip {
     justify-content: center;
     margin-left: 13%;
-    margin-top: 10px;
+    margin-top: 8px;
     background-color: #fff4f4;
     border: 2px solid #fff4f4;
     width: 140px;
@@ -165,12 +174,26 @@ img {
 button {
     border: none;
     background-color: #ffe6e6;
-    padding: 10px 20px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    position: center;
   }
 
+  .container {
+    height: 180px;
+    position: relative;
+
+  }
+  
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
